@@ -14,7 +14,7 @@ public class ConversorAPI {
     public static double obtenerConversion(String monedaBase, String monedaConvertida, double monto)
             throws IOException, InterruptedException {
 
-        String urlApi = "https://v6.exchangerate-api.com/v6/f051a796976ff8355e55e93d/pair/"
+        String urlApi = "https://v6.exchangerate-api.com/v6/{tu-api-key}}/pair/"
                 + monedaBase + "/" + monedaConvertida+"/"+monto;
 
         HttpClient client = HttpClient.newHttpClient();
